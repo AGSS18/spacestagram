@@ -11,7 +11,7 @@ function RangeForm(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.handleRequest(true);
+        props.handleRequest(range);
     }
 
     return(
