@@ -5,11 +5,13 @@ import spaceship from '../../media/spaceship.png';
 function Header() {
     return(
         <header className="header">
-            <div className="logo">
-                Spacestagram <span className="legend">Brought yo you by NASA's image API</span>
+            <div>
+                <h1 className="logo">
+                    Spacestagram <span className="legend">Brought yo you by NASA's image API</span>
+                </h1>
             </div>
             <div className="spaceship">
-                <img className="spaceship-img" src={spaceship} />
+                <img className="spaceship-img" src={spaceship} alt="spaceship"/>
             </div>
         </header>
     );
