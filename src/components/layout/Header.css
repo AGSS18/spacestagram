@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 0 5%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.legend {
+  display: block;
+  text-align: end;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  font-weight: 300;
+  color: #b6b6b6;
+}
+
+.spaceship {
+  width: 8%;
+}
+
+.spaceship-img {
+  width: 100%;
+  backface-visibility: hidden;
+  animation: move 6s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .legend {
+    font-size: 1rem;
+  }
+
+  .spaceship {
+    width: 5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    font-size: 3.2rem;
+  }
+
+  .legend {
+    font-size: 1.2rem;
+  }
+
+  .spaceship {
+    width: 3.5%;
+  }
+}
