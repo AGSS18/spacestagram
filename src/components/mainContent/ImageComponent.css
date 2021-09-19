@@ -1,0 +1,77 @@
+.component-card {
+  border-radius: 6px;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.content {
+  text-align: start;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+
+.description {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 600;
+  word-spacing: 0;
+  color: rgb(92, 92, 92);
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .actions button {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}

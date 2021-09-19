@@ -7,7 +7,7 @@ function Header() {
         <header className="header">
             <div>
                 <h1 className="logo">
-                    Spacestagram <span className="legend">Brought yo you by NASA's image API</span>
+                    Spacestagram <span className="legend">Brought to you by NASA's APOD API</span>
                 </h1>
             </div>
             <div className="spaceship">
