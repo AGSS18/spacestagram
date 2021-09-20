@@ -24,7 +24,7 @@ function MainContent() {
     }, [newRange])
 
     return (
-        <main className="main">
+        <main className="main container-big">
             <RangeForm handleRequest={handleRequest} data={data} />
             <ImagesList data={data} />
         </main>
