@@ -18,13 +18,14 @@ function MainContent() {
     }
 
     useEffect(() => {
-        let apiURL = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=${newRange}`;
+        let apiKey = "x0mBY603lnwUvaxubeH2uANgMCG12plFfDk0DRko"
+        let apiURL = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${newRange}`;
         axios.get(apiURL).then(handleResponse);
     }, [newRange])
 
     return (
         <main className="main">
-            <RangeForm handleRequest={handleRequest}/>
+            <RangeForm handleRequest={handleRequest} data={data} />
             <ImagesList data={data} />
         </main>
     );
