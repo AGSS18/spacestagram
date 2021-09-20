@@ -40,7 +40,6 @@ function ImagesList(props) {
                     height={200}
                     width={200}
                 />
-                <p className="text-white">Loading...</p>
             </section>
         );
     }
